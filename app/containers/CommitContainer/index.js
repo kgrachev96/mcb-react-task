@@ -6,8 +6,8 @@ export default class CommitContainer extends React.PureComponent { // eslint-dis
   render() {
     return (
       <div>
-        {this.props.commits.map((commit, index) =>
-          <div key={index} >
+        {this.props.commits.map((commit) =>
+          <div key={commit.id} >
             <ul>
               <li>{commit.commit.message}</li>
             </ul>
